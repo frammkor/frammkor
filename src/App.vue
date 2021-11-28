@@ -1,10 +1,22 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  <Header />
+  <main
+    class='bg-gray-900 h-screen w-screen overflow-auto font-dev text-gray-200'
+  >
+    <router-view />
+  </main>
 </template>
+
+<script>
+import Header from '@/components/Header.vue';
+
+export default {
+  name: 'App',
+  components: {
+    Header,
+  },
+};
+</script>
 
 <style>
 #app {
@@ -12,7 +24,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  --color-primary: red;
+  --color-primary-pale: blue;
+  --color-primary-light: green;
 }
 
 #nav {
