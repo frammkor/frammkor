@@ -5,7 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "sh deploy.sh"
+
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -27,7 +29,8 @@
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-vue": "^7.0.0",
     "postcss": "^7.0.39",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
+    "vue-svg-loader": "^0.17.0-beta.2"
   },
   "eslintConfig": {
     "root": true,

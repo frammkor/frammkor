@@ -25,6 +25,9 @@ module.exports = {
         light: 'var(--color-primary-light)',
         DEFAULT: 'var(--color-primary)',
       },
+      rotate: {
+        270: '270deg',
+      },
     },
   },
   variants: {

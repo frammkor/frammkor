@@ -1,6 +1,6 @@
 <template>
     <header
-      class="h-header-height fixed w-full flex items-center justify-center"
+      class="h-header-height fixed w-full flex items-center justify-center z-50"
       :class='{ "glass-background": !isHome}'
     >
         <h1
@@ -9,16 +9,21 @@
           :class='{ active: isHome}'
         >
           Franco Cespi
+            <git-hub-icon class="text-gray-400 fill-current"></git-hub-icon>
         </h1>
   </header>
 </template>
 
 <script>
-import { useRoute } from 'vue-router';
 import { ref, watch } from 'vue';
+import { useRoute } from 'vue-router';
+import GitHubIcon from '@/assets/icons/github.svg';
 
 export default {
   name: 'Header',
+  components: {
+    GitHubIcon,
+  },
   setup() {
     const route = useRoute();
 

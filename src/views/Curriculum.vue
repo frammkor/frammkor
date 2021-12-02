@@ -1,9 +1,12 @@
 <template>
   <div>
     <div class="w-full h-56 bg-gray-600"></div>
-    <section>
+    <section class="flex mt-16">
       <header>
-        <h2>About Me</h2>
+        <h2 class="curriculum__section-title transform rotate-180 mt-4 text-2xl mr-4">
+          About Me
+        </h2>
+        <!-- <h2 class="w-16 transform rotate-270 top-0">About Me</h2> -->
       </header>
       <p>
         Phosfluorescently incubate 24/7 innovation without standards compliant alignments. Professi
@@ -29,39 +32,52 @@
       </p>
     </section>
 
-    <section>
+    <section class="flex mt-16">
       <header>
-        <h2>Work experience</h2>
+        <h2 class="curriculum__section-title transform rotate-180 mt-4 text-2xl">
+          Work experience
+        </h2>
       </header>
-      <ol class="mx-auto">
-        <li class="flex justify-center">
-          <div class="text-right">
-            <h3 class="font-bold text-lg text-green-600">This is the Job Title</h3>
-            <p>The Company</p>
-            <time datetime="2010-09">Sep 2019</time> - <time datetime="2021-08">Today</time>
-          </div>
-          <ul class="border-l ml-4 pl-4 border-green-500 text-left">
-            <li class="chevron-bullet">Development methodology: Waterfall</li>
-            <li class="chevron-bullet">Integration Testing w/Cypress</li>
-            <li class="chevron-bullet">UI / UX improvements</li>
-            <li class="chevron-bullet">Technology migrations</li>
-          </ul>
-        </li>
+      <ol class="w-full flex flex-col px-4 md:px-0">
+        <template v-for='job in Jobs' v-bind:key='job.companyName'>
+          <job-card :job='job'></job-card>
+        </template>
       </ol>
     </section>
   </div>
 </template>
 
 <script>
+import jobs from '@/utils/jobs';
+import Job from '@/utils/Job';
+import JobCard from '../components/JobCard.vue';
+
+const Jobs = jobs.map((job) => new Job(
+  job.title,
+  job.companyName,
+  job.startDate,
+  job.endDate,
+  job.descriptions,
+));
+
 export default {
   name: 'Curriculum',
+  components: {
+    JobCard,
+  },
+  data() {
+    return { Jobs };
+  },
 };
 </script>
 
 <style>
-  .chevron-bullet::before {
-    content: ">";
-    padding-right: 5px;
-    color: var(--color-primary);
-  }
+.curriculum__section-title {
+  writing-mode: vertical-rl;
+}
+/* .curriculum__section-title {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+} */
+
 </style>
