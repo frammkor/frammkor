@@ -16,9 +16,9 @@
         alt='franco cespi dev'
         src='../assets/fc-dev1.jpeg'
       />
-      <h2 class="home-header absolute text-center w-full md:w-2/4 opacity-80 group-hover:opacity-100 group-focus:opacity-100 md:right-0 right-header">
-        Developer
-      </h2>
+          <h2 class="home-header absolute text-center w-full md:w-2/4 opacity-80 group-hover:opacity-100 group-focus:opacity-100 md:right-0 right-header">
+            Developer
+          </h2>
     </router-link>
   </div>
 </template>

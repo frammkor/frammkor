@@ -4,12 +4,10 @@
 
 .glass-background {
     background-attachment: fixed;
-    background: inherit;
     backdrop-filter: blur(5px);
 }
 
-.glass-background::before {
-    background: inherit;
+.glass-background::after {
     content: '';
     position: absolute;
     top: 0;
@@ -18,6 +16,7 @@
     bottom: 0;
     box-shadow: inset 0 0 2000px rgba(33, 33, 33, 0.5);
     filter: blur(40px);
+    z-index: -1;
 }
 
 .chevron-bullet::before {

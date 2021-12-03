@@ -6,7 +6,7 @@
     </div>
     <nav
         class='absolute w-sidebar-width pt-header-height top-0 bottom-0 left-0
-            transition-all ease-in-out duration-700'
+            transition-all ease-in-out duration-700 glass-background'
         :class="{ 'active': !showNav }"
     >
         <!-- subsite switcher -->
@@ -31,6 +31,7 @@
             <!-- dev nav -->
             <li>
                 <router-link
+                    class="text-lg"
                     :class='{ "text-blue-300": subsite === "art" }'
                     :to='{  name: "CV" }'
                 >
@@ -39,6 +40,7 @@
             </li>
             <li>
                 <router-link
+                    class="text-lg"
                     :class='{ "text-blue-300": subsite === "art" }'
                     :to='{  name: "Projects" }'
                 >
@@ -48,6 +50,7 @@
             <!-- art nav -->
             <li>
                 <router-link
+                    class="text-lg"
                     :class='{ "text-blue-300": subsite === "art" }'
                     :to='{  name: "CV" }'
                 >
@@ -56,6 +59,7 @@
             </li>
             <li>
                 <router-link
+                    class="text-lg"
                     :class='{ "text-blue-300": subsite === "art" }'
                     :to='{  name: "Projects" }'
                 >
