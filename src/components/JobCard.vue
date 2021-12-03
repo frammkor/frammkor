@@ -30,10 +30,5 @@ export default {
 </script>
 
 <style>
-header h1.active {
-  transform: translateY(calc(48vh));
-  top: 0;
-  position: absolute;
-  @apply text-4xl;
-}
+
 </style>

@@ -10,5 +10,6 @@ cd dist
 git init
 git add -A
 git commit -m 'deploy'
+# pushed using SSH
 git push -f git@github.com:frammkor/frammkor.github.io.git master:gh-pages
 cd -

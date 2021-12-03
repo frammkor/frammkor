@@ -6,10 +6,14 @@ module.exports = {
   theme: {
     fontFamily: {
       dev: ['Ubuntu Mono', 'monospace'],
+      header: ['Syncopate', 'sans-serif'],
     },
     colors: {
       gray: colors.trueGray,
-      green: colors.green,
+      green: colors.lime,
+      fuchsia: colors.fuchsia,
+      black: colors.black,
+      white: colors.white,
     },
     extend: {
       spacing: {
@@ -31,7 +35,10 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      grayscale: ['hover', 'focus', 'group-focus', 'group-hover'],
+      scale: ['hover', 'focus', 'group-focus', 'group-hover'],
+    },
   },
   plugins: [],
 };

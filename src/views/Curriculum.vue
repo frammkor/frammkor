@@ -44,6 +44,19 @@
         </template>
       </ol>
     </section>
+
+    <section class="mt-16">
+      <header>
+        <h2 class="text-2xl ml-4 text-left">
+          TOOLS
+        </h2>
+      </header>
+      <ol class="w-full flex flex-col px-4 md:px-0">
+        <template v-for='job in Jobs' v-bind:key='job.companyName'>
+          <job-card :job='job'></job-card>
+        </template>
+      </ol>
+    </section>
   </div>
 </template>
 
@@ -74,10 +87,7 @@ export default {
 <style>
 .curriculum__section-title {
   writing-mode: vertical-rl;
+  @apply uppercase;
+  @apply text-green-500;
 }
-/* .curriculum__section-title {
-  writing-mode: vertical-lr;
-  text-orientation: upright;
-} */
-
 </style>

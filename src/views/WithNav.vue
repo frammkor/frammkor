@@ -1,9 +1,9 @@
 <template>
-    <p class="hidden md:block absolute top-0 m-4 z-10"
+    <div class="md:hidden absolute top-0 m-7 text-green-500 fill-current z-10 "
         @click="swtichNav"
     >
-        hide
-    </p>
+        <burger-menu />
+    </div>
     <nav
         class='absolute w-sidebar-width pt-header-height top-0 bottom-0 left-0
             transition-all ease-in-out duration-700'
@@ -12,14 +12,14 @@
         <!-- subsite switcher -->
         <p class="uppercase">
             <router-link
-                :class='{ "text-blue-300": subsite === "art" }'
+                :class='{ "text-fuchsia-500": subsite === "art" }'
                 :to='{  name: "About" }'
             >
                 Artist
             </router-link>
             /
             <router-link
-                :class='{ "text-blue-300": subsite === "dev" }'
+                :class='{ "text-green-500": subsite === "dev" }'
                 :to='{  name: "CV" }'
             >
                 Programmer
@@ -72,9 +72,13 @@
 <script>
 import { useRoute } from 'vue-router';
 import { ref, watch } from 'vue';
+import BurgerMenu from '@/assets/icons/burger-menu.svg';
 
 export default {
   name: 'WithNav',
+  components: {
+    BurgerMenu
+  },
   setup() {
     const route = useRoute();
 

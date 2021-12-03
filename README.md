@@ -5,6 +5,12 @@
 npm install
 ```
 
+## Project deploy using SSH
+Done following this instructions https://medium.com/swlh/deploy-vue-app-to-github-pages-2ada48d7397e
+```
+npm run deploy
+```
+
 ### Compiles and hot-reloads for development
 ```
 npm run serve
