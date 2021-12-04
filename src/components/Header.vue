@@ -44,4 +44,10 @@ export default {
     @apply text-3xl;
     @apply md:text-5xl;
   }
+
+  @media (min-width: 767.98px) { /* sm */
+  header h1.active {
+    transform: translateY(calc(20vh));
+  }
+  }
 </style>

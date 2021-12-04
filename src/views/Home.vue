@@ -1,22 +1,22 @@
 <template>
   <div class="w-full h-full overflow-hidden">
-    <router-link class="group" to='/in/art'>
+    <router-link class="cursor-pointer group" to='/in/art'>
       <img
         class='object-top object-cover h-2/4 w-full md:w-2/4 md:h-full md:inline filter grayscale group-hover:grayscale-0 group-focus:grayscale-0 transform group-hover:scale-105 group-focus:scale-105 transition-all ease-in-out duration-300'
         alt='franco cespi art'
         src='../assets/fc-art1.png'
       />
-      <h2 class="home-header absolute text-center w-full md:w-2/4 opacity-80 group-hover:opacity-100 group-focus:opacity-100 md:left-0 left-header">
+      <h2 class="transition-opacity duration-400 ease-in-out home-header absolute text-center w-full md:w-2/4 opacity-80 group-hover:opacity-100 group-focus:opacity-100 md:left-0 left-header">
         Artist
       </h2>
     </router-link>
-    <router-link class="group" to='/in/dev/cv'>
+    <router-link class="cursor-pointer group" to='/in/dev/cv'>
       <img
         class='object-cover h-2/4 w-full md:w-2/4 md:h-full md:inline filter grayscale group-hover:grayscale-0 group-focus:grayscale-0 transform group-hover:scale-105 group-focus:scale-105 transition-all ease-in-out duration-300'
         alt='franco cespi dev'
         src='../assets/fc-dev1.jpeg'
       />
-          <h2 class="home-header absolute text-center w-full md:w-2/4 opacity-80 group-hover:opacity-100 group-focus:opacity-100 md:right-0 right-header">
+          <h2 class="transition-opacity duration-400 ease-in-out home-header absolute text-center w-full md:w-2/4 opacity-80 group-hover:opacity-100 group-focus:opacity-100 md:right-0 right-header">
             Developer
           </h2>
     </router-link>

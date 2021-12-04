@@ -5,7 +5,7 @@
         <burger-menu />
     </div>
     <nav
-        class='absolute w-sidebar-width pt-header-height top-0 bottom-0 left-0
+        class='absolute w-full md:w-sidebar-width pt-header-height top-0 bottom-0 left-0
             transition-all ease-in-out duration-700 glass-background'
         :class="{ 'active': !showNav }"
     >
@@ -27,7 +27,7 @@
         </p>
 
         <!-- subsite navigation -->
-        <ul class="pt-8 pr-8 text-right">
+        <ul class="pt-8 pr-8 text-center md:text-right">
             <!-- dev nav -->
             <li>
                 <router-link
@@ -107,6 +107,6 @@ export default {
 
 <style>
 nav.active {
-  transform: translateX(-250px);
+  transform: translateX(calc(-1 * 100vw));
 }
 </style>
