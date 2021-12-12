@@ -29,7 +29,7 @@
         <!-- subsite navigation -->
         <ul class="pt-8 pr-8 text-center md:text-right">
             <!-- dev nav -->
-            <li>
+            <li v-show='subsite === "dev"'>
                 <router-link
                     class="text-lg"
                     :class='{ "text-blue-300": subsite === "art" }'
@@ -38,7 +38,7 @@
                     CV
                 </router-link>
             </li>
-            <li>
+            <li v-show='subsite === "dev"'>
                 <router-link
                     class="text-lg"
                     :class='{ "text-blue-300": subsite === "art" }'
@@ -48,22 +48,22 @@
                 </router-link>
             </li>
             <!-- art nav -->
-            <li>
+            <li v-show='subsite === "art"'>
                 <router-link
                     class="text-lg"
                     :class='{ "text-blue-300": subsite === "art" }'
-                    :to='{  name: "CV" }'
+                    :to='{  name: "About" }'
                 >
-                    CV
+                    About
                 </router-link>
             </li>
-            <li>
+            <li v-show='subsite === "art"'>
                 <router-link
                     class="text-lg"
                     :class='{ "text-blue-300": subsite === "art" }'
-                    :to='{  name: "Projects" }'
+                    :to='{  name: "Gallery" }'
                 >
-                    Projects
+                    Gallery
                 </router-link>
             </li>
         </ul>

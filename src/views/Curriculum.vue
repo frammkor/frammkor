@@ -3,7 +3,7 @@
     <div class="w-full h-56 bg-gray-600"></div>
     <section class="flex mt-16">
       <header>
-        <h2 class="curriculum__section-title transform rotate-180 mt-4 text-2xl mr-4">
+        <h2 class="section-title transform rotate-180 mt-4 text-2xl mr-4">
           About Me
         </h2>
         <!-- <h2 class="w-16 transform rotate-270 top-0">About Me</h2> -->
@@ -34,7 +34,7 @@
 
     <section class="flex mt-16">
       <header>
-        <h2 class="curriculum__section-title transform rotate-180 mt-4 text-2xl">
+        <h2 class="section-title">
           Work experience
         </h2>
       </header>
@@ -61,33 +61,26 @@
 </template>
 
 <script>
-import jobs from '@/utils/jobs';
-import Job from '@/utils/Job';
+// WORK WITH VUEX
+import { useStore } from 'vuex';
 import JobCard from '../components/JobCard.vue';
-
-const Jobs = jobs.map((job) => new Job(
-  job.title,
-  job.companyName,
-  job.startDate,
-  job.endDate,
-  job.descriptions,
-));
 
 export default {
   name: 'Curriculum',
   components: {
     JobCard,
   },
-  data() {
-    return { Jobs };
+  setup() {
+    const store = useStore();
+    const Jobs = store.dispatch('onLoad', []);
+
+    return {
+      Jobs,
+    };
   },
 };
 </script>
 
 <style>
-.curriculum__section-title {
-  writing-mode: vertical-rl;
-  @apply uppercase;
-  @apply text-green-500;
-}
+
 </style>

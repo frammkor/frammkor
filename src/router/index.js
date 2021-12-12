@@ -6,6 +6,7 @@ import WithNav from '../views/WithNav.vue';
 import Dev from '../views/Dev.vue';
 import Art from '../views/Art.vue';
 import Gallery from '../views/Gallery.vue';
+import GalleryItem from '../views/GalleryItem.vue';
 
 const routes = [
   {
@@ -32,6 +33,11 @@ const routes = [
             name: 'Projects', // change to GalleryDev?
             path: 'projects',
             component: Gallery,
+          },
+          {
+            name: 'GalleryItem',
+            path: 'gallery/:id',
+            component: GalleryItem,
           },
         ],
       },

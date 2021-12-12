@@ -24,3 +24,13 @@
     padding-right: 5px;
     color: var(--color-primary);
 }
+
+.section-title {
+    writing-mode: vertical-rl;
+    @apply uppercase;
+    @apply text-green-500;
+    @apply transform;
+    @apply rotate-180;
+    @apply mt-4;
+    @apply text-2xl;
+}
