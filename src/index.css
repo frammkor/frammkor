@@ -4,17 +4,17 @@
 
 .glass-background {
     background-attachment: fixed;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
 }
 
-.glass-background::after {
+.glass-background::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    box-shadow: inset 0 0 2000px rgba(33, 33, 33, 0.5);
+    box-shadow: inset 0 0 2000px rgba(16, 16, 16, 0.98);
     filter: blur(40px);
     z-index: -1;
 }
@@ -31,6 +31,5 @@
     @apply text-green-500;
     @apply transform;
     @apply rotate-180;
-    @apply mt-4;
     @apply text-2xl;
 }

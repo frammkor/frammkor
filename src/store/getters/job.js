@@ -15,6 +15,8 @@ export function getJobs(todos) {
   }
 }
 
-export const getters = {
+const getters = {
   getProgrammingJobs: (state) => getJobs(state.jobs),
 };
+
+export default getters;

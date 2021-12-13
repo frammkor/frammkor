@@ -3,7 +3,7 @@
     <div class="w-full h-56 bg-gray-600"></div>
     <section class="flex mt-16">
       <header>
-        <h2 class="section-title transform rotate-180 mt-4 text-2xl mr-4">
+        <h2 class="section-title">
           About Me
         </h2>
         <!-- <h2 class="w-16 transform rotate-270 top-0">About Me</h2> -->
@@ -39,7 +39,7 @@
         </h2>
       </header>
       <ol class="w-full flex flex-col px-4 md:px-0">
-        <template v-for='job in Jobs' v-bind:key='job.companyName'>
+        <template v-for='job in jobs' v-bind:key='job.companyName'>
           <job-card :job='job'></job-card>
         </template>
       </ol>
@@ -51,19 +51,19 @@
           TOOLS
         </h2>
       </header>
-      <ol class="w-full flex flex-col px-4 md:px-0">
-        <template v-for='job in Jobs' v-bind:key='job.companyName'>
+      <!-- <ol class="w-full flex flex-col px-4 md:px-0">
+        <template v-for='job in jobs' v-bind:key='job.companyName'>
           <job-card :job='job'></job-card>
         </template>
-      </ol>
+      </ol> -->
     </section>
   </div>
 </template>
 
 <script>
-// WORK WITH VUEX
-import { useStore } from 'vuex';
 import JobCard from '../components/JobCard.vue';
+import Jobs from '@/utils/Jobs';
+import Job from '@/utils/Job';
 
 export default {
   name: 'Curriculum',
@@ -71,11 +71,16 @@ export default {
     JobCard,
   },
   setup() {
-    const store = useStore();
-    const Jobs = store.dispatch('onLoad', []);
+    const JobsObjectArray = Jobs.map((job) => new Job(
+      job.title,
+      job.companyName,
+      job.startDate,
+      job.endDate,
+      job.descriptions,
+    ));
 
     return {
-      Jobs,
+      jobs: JobsObjectArray,
     };
   },
 };

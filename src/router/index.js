@@ -5,8 +5,8 @@ import Curriculum from '../views/Curriculum.vue';
 import WithNav from '../views/WithNav.vue';
 import Dev from '../views/Dev.vue';
 import Art from '../views/Art.vue';
-import Gallery from '../views/Gallery.vue';
-import GalleryItem from '../views/GalleryItem.vue';
+import Gallery from '../views/Projects.vue';
+import ProjectItem from '../views/ProjectItem.vue';
 
 const routes = [
   {
@@ -35,9 +35,9 @@ const routes = [
             component: Gallery,
           },
           {
-            name: 'GalleryItem',
+            name: 'ProjectItem',
             path: 'gallery/:id',
-            component: GalleryItem,
+            component: ProjectItem,
           },
         ],
       },
