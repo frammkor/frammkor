@@ -45,22 +45,23 @@
       </ol>
     </section>
 
-    <section class="mt-16">
+    <section class="flex mt-16">
       <header>
-        <h2 class="text-2xl ml-4 text-left">
-          TOOLS
+        <h2 class="section-title">
+          GitHub Profile
         </h2>
       </header>
-      <!-- <ol class="w-full flex flex-col px-4 md:px-0">
-        <template v-for='job in jobs' v-bind:key='job.companyName'>
-          <job-card :job='job'></job-card>
-        </template>
-      </ol> -->
+      <ol class="w-full flex flex-col px-4 md:px-0">
+        <p v-for='repo in repos' v-bind:key='repo.id'>
+          name: {{ repo.name }} / language: {{ repo.language }}
+        </p>
+      </ol>
     </section>
   </div>
 </template>
 
 <script>
+import { reactive } from '@vue/reactivity';
 import JobCard from '../components/JobCard.vue';
 import Jobs from '@/utils/Jobs';
 import Job from '@/utils/Job';
@@ -69,6 +70,11 @@ export default {
   name: 'Curriculum',
   components: {
     JobCard,
+  },
+  data() {
+    return {
+      repos: [],
+    };
   },
   setup() {
     const JobsObjectArray = Jobs.map((job) => new Job(
@@ -83,6 +89,14 @@ export default {
       jobs: JobsObjectArray,
     };
   },
+  mounted() {
+    fetch('https://api.github.com/users/frammkor/repos')
+      .then((res) => res.json())
+      .then((data) => {
+        this.repos = data;
+      })
+      .catch((err) => console.error(err));
+  }
 };
 </script>
 
