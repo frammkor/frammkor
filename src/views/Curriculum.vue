@@ -57,7 +57,7 @@
         </h3>
       </header>
       <ol class="w-full flex flex-col px-4 md:px-0">
-        <p v-for='repo in repos' v-bind:key='repo.id'>
+        <p v-for='repo in repos' :key='repo.id'>
           name: {{ repo.name }} / language: {{ repo.language }}
         </p>
       </ol>
