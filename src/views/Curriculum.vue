@@ -32,7 +32,7 @@
 
             Collaboratively.
         </p>
-        <img src='../assets/images/IMG_0255bb_deCara.jpeg' class="hidden md:block rounded-full h-64 w-64 filter hue-rotate-180" alt='Hue rotated images of Franco with a suite' />
+        <img src='../assets/images/IMG_0255bb_deCara.jpeg' class="hidden md:block rounded-full h-64 w-64 filter grayscale" alt='Hue rotated images of Franco with a suite' />
         <!-- hue-rotate-90 -->
       </div>
     </section>

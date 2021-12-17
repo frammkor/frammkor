@@ -1,21 +1,19 @@
 <template>
-  <ul class="mx-4 lg:mx-64 my-4 grid gap-4">
-    <template v-for='project in projects' :key='project'>
-      <transition appear name="slide-in" @after-enter='incrementIndex'>
-        <li class='matrix-load-initial' v-if="project <= workingOnIndex">
-          <router-link :to="{ name: 'ProjectItem', params: {id: 'test'}}" class='group'>
-            <div class="h-24 matrix-loading" :class="{'matrix-loaded': workingOnIndex > project}">
-              <img class='object-cover w-full h-full group-hover:scale-110 group-focus:scale-110 transform duration-500 ease-in-out filter grayscale group-hover:grayscale-0 group-focus:grayscale-0'
-                src="../assets/images/hm-milonga.png"
-                alt="A milonga detail screen"
-                srcset=""
-              >
-            </div>
-          </router-link>
-        </li>
-      </transition>
+  <transition-group appear tag='ul' name="slide-in" @after-enter='incrementIndex' class="mx-4 lg:mx-64 my-4 grid gap-4">
+    <template v-for='project in projects'>
+      <li class='matrix-load-initial' v-if="project <= workingOnIndex" :key='project'>
+        <router-link :to="{ name: 'ProjectItem', params: {id: 'test'}}" class='group'>
+          <div class="h-24 matrix-loading" :class="{'matrix-loaded': workingOnIndex > project}">
+            <img class='object-cover w-full h-full group-hover:scale-110 group-focus:scale-110 transform duration-500 ease-in-out filter grayscale group-hover:grayscale-0 group-focus:grayscale-0'
+              src="../assets/images/hm-milonga.png"
+              alt="A milonga detail screen"
+              srcset=""
+            >
+          </div>
+        </router-link>
+      </li>
     </template>
-  </ul>
+  </transition-group>
 </template>
 
 <script>
@@ -25,7 +23,7 @@ export default {
     return {
       show: false,
       workingOnIndex: 0,
-      projects: [0, 1, 2, 3 ,4 ,5 ,6 ,7 ,8],
+      projects: [0, 1, 2, 3, 4, 5, 6, 7, 8],
     };
   },
   methods: {
