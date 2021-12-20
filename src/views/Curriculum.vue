@@ -53,33 +53,43 @@
     <section class="flex md:flex-col mt-16">
       <header>
         <h3 class="section-title">
+          Technologies
+        </h3>
+      </header>
+      <ol class="w-full flex text-green-400 fill-current">
+        <li>
+          <burger-menu class="h-8 w-8" />
+        </li>
+        <li>
+          <burger-menu />
+        </li>
+        <li>
+          <burger-menu />
+        </li>
+      </ol>
+    </section>
+
+    <section class="flex md:flex-col mt-16">
+      <header>
+        <h3 class="section-title">
           GitHub Profile
         </h3>
       </header>
-      <ol class="w-full flex flex-col px-4 md:px-0">
-        <p v-for='repo in repos' :key='repo.id'>
-          name: {{ repo.name }} / language: {{ repo.language }}
-        </p>
-      </ol>
     </section>
   </div>
 </template>
 
 <script>
-import { reactive } from '@vue/reactivity';
 import JobCard from '../components/JobCard.vue';
 import Jobs from '@/utils/Jobs';
 import Job from '@/utils/Job';
+import BurgerMenu from '@/assets/icons/burger-menu.svg';
 
 export default {
   name: 'Curriculum',
   components: {
     JobCard,
-  },
-  data() {
-    return {
-      repos: [],
-    };
+    BurgerMenu,
   },
   setup() {
     const JobsObjectArray = Jobs.map((job) => new Job(
@@ -94,14 +104,6 @@ export default {
       jobs: JobsObjectArray,
     };
   },
-  mounted() {
-    fetch('https://api.github.com/users/frammkor/repos')
-      .then((res) => res.json())
-      .then((data) => {
-        this.repos = data;
-      })
-      .catch((err) => console.error(err));
-  }
 };
 </script>
 

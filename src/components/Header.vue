@@ -5,7 +5,7 @@
     >
         <h1
           class='font-bold text-xl text-yellow-50 uppercase mx-auto w-full
-          transition-all ease-in-out duration-700 font-header text-gray-50'
+          transition-all ease-in-out duration-700 font-header text-gray-50 pointer-events-none'
           :class='{ active: isHome}'
         >
           Franco Cespi
@@ -19,8 +19,6 @@ import { useRoute } from 'vue-router';
 
 export default {
   name: 'Header',
-  components: {
-  },
   setup() {
     const route = useRoute();
 
@@ -39,7 +37,7 @@ export default {
 <style>
   header h1.active {
     transform: translateY(calc(45vh));
-    text-shadow: 0 0 3vw #d68307;
+    text-shadow: 0 0 2vw #976d2d;
     color: #e4a341;
     @apply text-3xl;
     @apply md:text-5xl;

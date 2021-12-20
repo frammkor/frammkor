@@ -1,5 +1,5 @@
 <template>
-    <div class="md:hidden absolute top-0 m-7 text-green-500 fill-current z-10 "
+    <div class="xl:hidden absolute top-0 m-7 text-green-500 fill-current z-10 "
         @click="swtichNav"
         aria-controls="navbar"
     >
@@ -42,6 +42,17 @@
                 >
                     Curriculum
                 </router-link>
+                <ol>
+                    <li>
+                        <router-link
+                            class="text-lg focus:text-primary hover:text-primary"
+                            :class='{ "text-blue-300": subsite === "art" }'
+                            to='#about'
+                        >
+                            About
+                        </router-link>
+                    </li>
+                </ol>
             </li>
             <li v-show='subsite === "dev"'>
                 <router-link
@@ -73,7 +84,7 @@
             </li>
         </ul>
     </nav>
-    <div class="pt-header-height md:pl-sidebar-width container mr-auto">
+    <div class="pt-header-height md:px-4 container xl2:mx-auto lg:pl-sidebar-width xl2:pl-4">
         <router-view />
     </div>
 </template>

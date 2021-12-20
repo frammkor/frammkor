@@ -21,14 +21,13 @@ export default {
   name: 'Projects',
   data() {
     return {
-      show: false,
       workingOnIndex: 0,
       projects: [0, 1, 2, 3, 4, 5, 6, 7, 8],
     };
   },
   methods: {
     incrementIndex() {
-      this.workingOnIndex = this.workingOnIndex + 1;
+      this.workingOnIndex += 1;
     },
   },
 };
@@ -36,7 +35,7 @@ export default {
 
 <style>
 .slide-in-enter-active {
-  transition: transform 0.3s ease-out;
+  transition: transform 0.2s ease-out;
 }
 
 .slide-in-leave-active {

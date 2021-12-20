@@ -1,6 +1,7 @@
 const colors = require('tailwindcss/colors');
+const withAnimations = require('animated-tailwindcss');
 
-module.exports = {
+module.exports = withAnimations({
   purge: {
     content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx,html}'],
     options: {
@@ -17,8 +18,6 @@ module.exports = {
       gray: colors.trueGray,
       green: colors.lime,
       fuchsia: colors.fuchsia,
-      black: colors.black,
-      white: colors.white,
     },
     extend: {
       spacing: {
@@ -43,7 +42,8 @@ module.exports = {
     extend: {
       grayscale: ['hover', 'focus', 'group-focus', 'group-hover'],
       scale: ['hover', 'focus', 'group-focus', 'group-hover'],
+      contrast: ['hover', 'focus', 'group-focus', 'group-hover'],
     },
   },
   plugins: [],
-};
+}, { experimental: true });
