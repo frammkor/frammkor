@@ -1,6 +1,6 @@
 1:HL["/frammkor.github.io/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 2:HL["/frammkor.github.io/_next/static/css/ecfc3b885b329082.css","style"]
-0:["UhYFvJB1kku3ZDPPs28s4",[[["",{"children":["about",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/frammkor.github.io/_next/static/css/ecfc3b885b329082.css","precedence":"next"}]],"$L4"]]]]
+0:["4JXwjqNhtApA6JrbLRVPV",[[["",{"children":["about",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/frammkor.github.io/_next/static/css/ecfc3b885b329082.css","precedence":"next"}]],"$L4"]]]]
 5:I{"id":3770,"chunks":["272:static/chunks/webpack-1d08be1df9105f84.js","625:static/chunks/bf777334-dabbb02cd6d67cc7.js","673:static/chunks/673-7862df1ad33b5c70.js"],"name":"","async":false}
 6:I{"id":9268,"chunks":["272:static/chunks/webpack-1d08be1df9105f84.js","625:static/chunks/bf777334-dabbb02cd6d67cc7.js","673:static/chunks/673-7862df1ad33b5c70.js"],"name":"","async":false}
 8:I{"id":710,"chunks":["710:static/chunks/710-a6cc8e4fac237555.js","301:static/chunks/app/about/page-29d56321d67962ad.js"],"name":"","async":false}
