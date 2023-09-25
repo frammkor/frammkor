@@ -1,66 +1,33 @@
-# frammkor-portfolio-vue
+# Deploying to GitHub Pages
 
-## Project setup
-```
-npm install
-```
+This example supports deploying a statically exported Next.js application to GitHub Pages.
 
-## Project deploy using SSH
-Done following this instructions https://medium.com/swlh/deploy-vue-app-to-github-pages-2ada48d7397e
-```
-npm run deploy
-```
+The `out` directory should not be ignored by version control.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## How to use
 
-### Compiles and minifies for production
-```
-npm run build
+Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+
+```bash
+npx create-next-app --example github-pages nextjs-github-pages
+# or
+yarn create next-app --example github-pages nextjs-github-pages
+# or
+pnpm create next-app --example github-pages nextjs-github-pages
 ```
 
-### Lints and fixes files
+### Deploy to GitHub Pages
+
+1.  Create a new public GitHub repository.
+1.  Edit `next.config.js` to match your GitHub repository name.
+1.  Push the starter code to the `main` branch.
+1.  Run the `deploy` script (e.g. `npm run deploy`) to create the `gh-pages` branch.
+1.  On GitHub, go to **Settings** > **Pages** > **Branch**, and choose `gh-pages` as the branch with the `/root` folder. Hit **Save**.
+1.  Make a change.
+1.  Run the `deploy` script again to push the changes to GitHub Pages.
+
+Congratulations! You should have a URL like:
+
+```bash
+https://<github-user-name>.github.io/<github-project-name>/
 ```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
-### Animations
-
-Done with this [library](https://github.com/ikcb/animated-tailwindcss).
-
-todo:
-Curriculum router
-Use component in object property
-Prevent external links to show in the home menu
-
-tools/technologies
-
-store
-    jobs 0_1 projects
-    projects 0_1 external links
-    artGalleries (
-        content: [images/videos]
-    )
-
-contact:
-    gen:
-        - email
-    art:
-        - youtube
-        - instagram
-    dev
-        - github
-        - linked it
-
-GitHub Profile
-    Amount of repositories
-    Fist 5 most used languages
-    Starting date
-    Total contributions?
-
-Transitions between routes
