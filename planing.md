@@ -23,6 +23,7 @@ Do
 - Use constants like in the 3d porfolio video for nav links by map the array in the
 
 
+(Background patterns )[https://heropatterns.com/]
 
 (7 Portfolio Websites That Will Make You Jealous)[https://www.youtube.com/watch?v=5O0YDHiosD0]
 
