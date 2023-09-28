@@ -1,24 +1,36 @@
 import Link from 'next/link'
 
+import styles from './home.module.css'
+
 export default function Home() {
-  return (
-    <div>
-      <h1>
-        Hi! I am Franco
-      </h1>
+    return (
+        <div className={styles.mainContainer}>
+            <h1>
+                Hi! I am Franco
+            </h1>
+            <p>
+                A geek, an artist, and a full-stack developer.
+            </p>
 
-      <p>
-        I am updating this website.
-      </p>
-      <p>
-        I leave you my CV for now. Come back later to see cool stuff.
-      </p>
+            <hr />
 
-      <a className='d-block' href="/CV Franco 2023-10 INGLES.pdf"
-        download="CV Franco 2023-10 INGLES.pdf"
-      >
-        Download CV
-      </a>
-    </div>
-  )
+            <p>
+                This site is under construction, proceed with caution.
+            </p>
+
+            <div className={styles.cardWrapper}>
+                <Link href='/cs' className={styles.card}>
+                    <h2 className={styles.cardTitle}>
+                        Meet the programmer
+                    </h2>
+                </Link>
+                <Link href='/art' className={styles.card}>
+                    <h2 className={styles.cardTitle}>
+                        Meet the artist
+                    </h2>
+                </Link>
+            </div>
+
+        </div>
+    )
 }

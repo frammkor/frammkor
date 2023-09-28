@@ -1,0 +1,19 @@
+.mainContainer {
+    text-align: center;
+    margin: 4rem 2rem 0 2rem;
+}
+
+.cardWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    border: 2px solid #000;
+    padding: 2rem 1rem;
+    margin: 1rem;
+}
+
+.cardTitle {
+    font-size: 1.3rem;
+}
