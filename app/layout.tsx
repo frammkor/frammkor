@@ -25,7 +25,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={ubuntuMono.className}>
-        {children}
+        <main className={styles.mainWrapper}>
+          {children}
+        </main>
         <div className={styles.contactWrapper}>
           <Contact />
         </div>
