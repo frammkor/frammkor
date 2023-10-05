@@ -1,0 +1,9 @@
+.slider {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.slide {
+    scroll-snap-align: start;
+}

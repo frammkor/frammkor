@@ -32,6 +32,6 @@
     "**/*.tsx",
     "next.config.js",
     ".next/types/**/*.ts"
-  ],
+, "app/art/Slider/index.jsx", "app/art/Slider/page.jsx"  ],
   "exclude": ["node_modules"]
 }

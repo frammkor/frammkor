@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Ubuntu_Mono } from 'next/font/google'
+import './global.css'
 import styles from './layout.module.css'
 
 // COMPONENTS
@@ -28,9 +29,9 @@ export default function RootLayout({
         <main className={styles.mainWrapper}>
           {children}
         </main>
-        <div className={styles.contactWrapper}>
+        {/* <div className={styles.contactWrapper}>
           <Contact />
-        </div>
+        </div> */}
         <Version />
       </body>
     </html>

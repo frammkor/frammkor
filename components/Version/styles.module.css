@@ -1,3 +1,15 @@
 .version {
-    float: right;
+    position: absolute;
+    right: 24px;
+    bottom: 12px;
+    z-index: 2;
+    color: azure;
+    mix-blend-mode: difference;
 }
+
+/* .version::after {
+    content: '';
+    inset: 0;
+    color: rgb(0, 255, 255); 
+    mix-blend-mode: difference;
+} */

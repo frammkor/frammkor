@@ -22,7 +22,14 @@ Do
     "I find programming to be one of the most creative activities"
 - Use constants like in the 3d porfolio video for nav links by map the array in the
 
+Fonts:
+(Optimizing with Next13)[https://nextjs.org/docs/app/building-your-application/optimizing/fonts#local-fonts]
+(Sienar AF Chariot (Free NC))[https://aurekfonts.github.io/?font=SienarAFChariot]
+(Scelet AF Aurebesh (Free NC))[https://aurekfonts.github.io/?font=SceletAFAurebesh]
+(Sacul High Alphabet (Lic Req))[https://aurekfonts.github.io/?font=SaculHighAlphabet]
 
+
+(¡Mira lo que puede hacer en CSS! - Carmen Ansio [miduconf])[https://www.youtube.com/watch?v=bnEGE5GHMFg&ab_channel=midulive]
 (Background patterns )[https://heropatterns.com/]
 
 (7 Portfolio Websites That Will Make You Jealous)[https://www.youtube.com/watch?v=5O0YDHiosD0]
