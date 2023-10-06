@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Here you will find a preview of my most relevant computer science and art projects',
 }
 
-const ubuntuMono = Ubuntu_Mono({
+const ubuntuMono = Ubuntu_Mono({ //       <body className={ubuntuMono.className}>
   weight: ['400', '700'],
   style: ['normal', 'italic'],
   subsets: ['latin'],
@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={ubuntuMono.className}>
+      <body>
         <main className={styles.mainWrapper}>
           {children}
         </main>

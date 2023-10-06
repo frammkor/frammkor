@@ -2,8 +2,33 @@
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
+
+    font-family: serif;
 }
 
 .slide {
     scroll-snap-align: start;
+    position: relative;
+}
+
+.slide:first-child::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 16px;
+    margin: auto;
+    display: flex;
+    width: 64px;
+    height: 64px;
+    justify-content: center;
+
+    background-position: center;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/chevron-down-double.svg');
+    fill: whitesmoke;
+    stroke: whitesmoke;
+    z-index: 1;
 }

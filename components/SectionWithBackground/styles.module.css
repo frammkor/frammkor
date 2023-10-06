@@ -4,7 +4,8 @@
 
     background-position: center center;
     background-attachment: fixed;
-    background-repeat: no-repeat; background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: var(--background-img);
     background-color: black;
     inset: 0;
@@ -55,20 +56,22 @@
 }
 
 .action {
-    display: inline-block;
     margin-top: 32px;
-    font-size: 1.2rem;
+    display: inline-block;
 
     padding: 8px 16px;
     border: 3px solid whitesmoke;
     border-radius: 2rem;
-    color: whitesmoke;
-    background-color: rgba(0, 0, 0, 0.1);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
 
+    color: whitesmoke;
+    font-size: 1.2rem;
     text-decoration: none;
+
+    transition: all 0.3s ease-in-out;
 }
 
 .action:hover, .action:active, .action:focus {
-    background-color: rgba(245, 245, 245, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
+    transform: scale(1.02);
 }
