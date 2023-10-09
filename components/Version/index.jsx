@@ -2,9 +2,7 @@
 import { version } from './styles.module.css'
 
 export default function Version() {
-    return <div>
-        <small className={version}>
+    return <small className={version}>
             Version 0.2
         </small>
-    </div>
 }

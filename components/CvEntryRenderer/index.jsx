@@ -24,8 +24,8 @@ const renderSwitch = (entry) => {
 }
 
 export default function CvEntryRenderer({entry}) {
-    return <div id={entry.id} className={styles[entry.id]}>
-        <h2>{entry.id}</h2>
+    return <div id={entry.id} className={styles.sectionWrapper} style={{gridArea: entry.id}}>
+        <h2 className={styles.sectionTitle}>{entry.id}</h2>
         {renderSwitch(entry)}
     </div>
 }

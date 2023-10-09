@@ -32,7 +32,7 @@ export default function RootLayout({
         {/* <div className={styles.contactWrapper}>
           <Contact />
         </div> */}
-        <Version />
+        {/* <Version /> */}
       </body>
     </html>
   )

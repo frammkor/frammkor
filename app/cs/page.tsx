@@ -6,24 +6,27 @@ import styles from './page.module.css'
 
 export default function Cs() {
     return (
-        <div className={styles.container}>
-            <div className={styles.hero}>
-                <h1>
-                    The Programmer
-                </h1>
+        <div className={styles.CsContainer}>
+            <div className={styles.glassContainer}>
 
-                <p>
-                    <a
-                        className='d-block'
-                        href="/CV Franco 2023-10 INGLES.pdf"
-                        download="CV Franco 2023-10 INGLES.pdf">
-                        Download my CV
-                    </a> or keep scrolling to see it.
-                </p>
+                <div className={styles.hero} style={{gridArea: 'hero'}}>
+                    <h1 className={styles.heroTitle}>
+                        The Programmer
+                    </h1>
+
+                    <p>
+                        <a
+                            className='d-block'
+                            href="/CV Franco 2023-10 INGLES.pdf"
+                            download="CV Franco 2023-10 INGLES.pdf">
+                            Download my CV
+                        </a> or keep scrolling to see it.
+                    </p>
+                </div>
+
+                {Object.entries(CurriculumVitae).map(([key, value]) => <CvEntryRenderer key={key} entry={value} />)}
+
             </div>
-
-            {Object.entries(CurriculumVitae).map(([key, value]) => <CvEntryRenderer key={key} entry={value} />)}
-
         </div>
     )
 }
