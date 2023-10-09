@@ -26,7 +26,7 @@ export default function Home() {
                 <div className={styles.cardWrapper}>
                     <Link href='/cs' className={styles.card}>
                         <h2 className={styles.cardTitle}>
-                            the programmer
+                            <span className={styles.cardTitleThe}>the</span> programmer
                         </h2>
 
                         <div className={styles.imgWrapper}>
@@ -35,7 +35,7 @@ export default function Home() {
                     </Link>
                     <Link href='/art' className={styles.card}>
                         <h2 className={styles.cardTitle}>
-                            the artist
+                            <span className={styles.cardTitleThe}>the</span> artist
                         </h2>
                         <div className={styles.imgWrapper}>
                             <Image src="/images/mask-base.png" fill alt="Picture of the author" />
