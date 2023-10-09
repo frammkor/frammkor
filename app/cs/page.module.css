@@ -15,6 +15,41 @@
 .CsContainer {
     font-family: monospace;
     color: rgb(228, 228, 228);
+    text-wrap: balance;
+
+    --logo-size: 48px; /* also repeated in the Experience component's img tag attributes */
+    --text-margin: calc(var(--logo-size) - 16px);
+    --list-spacing: 8px;
+}
+
+.CsContainer li {
+    margin-bottom: var(--list-spacing);
+}
+
+.CsContainer * a {
+    color: rgb(255, 98, 98);
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.CsContainer * a::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    left: 0;
+    height: 1px;
+    position:absolute;
+    background-color: rgb(255, 98, 98);
+    bottom: -2px;
+}
+
+.CsContainer * a:visited {
+    color: rgb(173, 234, 255);
+}
+
+.CsContainer * a:visited::after {
+    background-color: rgb(173, 234, 255);
 }
 
 @media (min-width: 1250px) {
@@ -44,11 +79,12 @@
     padding: 1rem;
 
     /* From https://css.glass */
-    background: rgba(0, 0, 0, 0.16);
+    /* background: rgba(0, 0, 0, 0.16); */
+    background: rgba(0, 0, 0, 0.6);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(3.9px);
-    -webkit-backdrop-filter: blur(3.9px);
+    /* backdrop-filter: blur(3.9px);
+    -webkit-backdrop-filter: blur(3.9px); */
     border: 1px solid rgba(0, 0, 0, 0.12);
 }
 

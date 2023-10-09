@@ -1,0 +1,11 @@
+.educationItem {
+    margin-bottom: 16px;
+}
+
+.educationItem h3 {
+    margin: 16px 0 6px 0;
+}
+
+.educationItem p {
+    margin: 6px 0;
+}

@@ -58,12 +58,14 @@ export default {
     },
     experience : {
         id: 'experience',
-        renderType: 'Job',
+        renderType: 'Experience',
         content: [
             {
                 id: 'hm',
                 role: 'Senior Fullstack Developer',
                 companyName: 'Hoy Milonga',
+                link: 'http://hoy-milonga.com/',
+                img: 'hm-logo.png',
                 startDate: 'September 2019',
                 endDate: 'Present',
                 details: [
@@ -82,6 +84,8 @@ export default {
                 id: 'handit',
                 role: 'Lead Frontend Developer',
                 companyName: 'Handit, Switzerland',
+                link: 'https://handit.ch/',
+                img: 'handit-logo.jpg',
                 startDate: 'November 2020',
                 endDate: 'March 2022',
                 details: [
@@ -93,6 +97,8 @@ export default {
                 id: 'mutualitics',
                 role: 'Junior Frontend Developer',
                 companyName: 'Mutualitics, Berlin',
+                link: 'https://www.linkedin.com/company/mutualitics/',
+                img: 'mutualitics-logo.jpg',
                 startDate: 'June 2020',
                 endDate: 'October 2020',
                 details: ['Data visualization with D3 embedded in a React application. Utilized GraphQL and' +
@@ -101,6 +107,8 @@ export default {
                 id: 'nextDot',
                 role: 'Junior Mobile Developer',
                 companyName: 'NextDots, Argentina',
+                link: 'https://www.linkedin.com/company/nextdots/about/',
+                img: 'next-dots-logo.jpg',
                 startDate: 'June 2020',
                 endDate: 'October 2020',
                 details: [

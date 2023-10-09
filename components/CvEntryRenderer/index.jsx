@@ -1,21 +1,20 @@
 import styles from './styles.module.css'
-import {Job, Education} from "@/components"
-
+import {Experience, Education} from "@/components"
 
 const renderSwitch = (entry) => {
     switch(entry.renderType) {
         case 'string':
-            return <p>{entry.content}</p>;
+            return <p className={styles.entryWrapper}>{entry.content}</p>;
         case 'strArray':
-            return <ul>
+            return <ul className={styles.entryWrapper}>
                 {entry.content.map((string, index) => <li key={index}>{string}</li>)}
             </ul>
-        case 'Job':
-            return <ul>
-                {entry.content.map(job => <Job job={job} key={job.id} />)}
+        case 'Experience':
+            return <ul className={styles.experienceList}>
+                {entry.content.map(experience => <Experience experience={experience} key={experience.id} />)}
             </ul>
         case 'Education':
-            return <ul>
+            return <ul className={styles.entryWrapper}>
                 {entry.content.map(educationEntry => <Education educationEntry={educationEntry} key={educationEntry.id} />)}
             </ul>
         default:
@@ -24,8 +23,8 @@ const renderSwitch = (entry) => {
 }
 
 export default function CvEntryRenderer({entry}) {
-    return <div id={entry.id} className={styles.sectionWrapper} style={{gridArea: entry.id}}>
+    return <section id={entry.id} className={styles.sectionWrapper} style={{gridArea: entry.id}}>
         <h2 className={styles.sectionTitle}>{entry.id}</h2>
         {renderSwitch(entry)}
-    </div>
+    </section>
 }

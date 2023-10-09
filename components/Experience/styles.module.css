@@ -1,0 +1,29 @@
+.experienceHeader {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.companyImg {
+    border-radius: 100%;
+    background-size: cover;
+}
+
+.experienceHeader h3 {
+    margin-bottom: 4px;
+}
+
+.experienceHeader p {
+    margin-top: 0;
+    /* width: max(25ch, 100%); */
+}
+
+
+
+.experienceDetails {
+    margin-left: var(--logo-size);
+}
+
+/* .experienceDetails li {
+    margin-bottom: var(--list-spacing);
+} */
