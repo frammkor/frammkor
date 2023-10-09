@@ -30,7 +30,7 @@ export default function Home() {
                         </h2>
 
                         <div className={styles.imgWrapper}>
-                            <Image src="/images/mask-pxart.png" fill alt="Picture of the author" />
+                            <img src="/images/mask-pxart.png" width={250} height={250} alt="Picture of the author" />
                         </div>
                     </Link>
                     <Link href='/art' className={styles.card}>
@@ -38,7 +38,7 @@ export default function Home() {
                             <span className={styles.cardTitleThe}>the</span> artist
                         </h2>
                         <div className={styles.imgWrapper}>
-                            <Image src="/images/mask-base.png" fill alt="Picture of the author" />
+                            <img src="/images/mask-base.png" width={250} height={250} alt="Picture of the author" />
                         </div>
                     </Link>
                 </div>
