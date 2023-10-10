@@ -1,14 +1,12 @@
 .sectionTitle {
     font-size: 1.4rem;
     text-transform: uppercase;
-    columns: #CF0110;
+    color: #cecece;
 }
 
 .experienceList {
     list-style-image: none;
     list-style: none;
-    display: grid;
-    gap: 1.3rem;
 }
 
 .entryWrapper {

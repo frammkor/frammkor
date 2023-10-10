@@ -9,7 +9,7 @@ export default function Cs() {
         <div className={styles.CsContainer}>
             <div className={styles.glassContainer}>
 
-                <div className={styles.hero} style={{gridArea: 'hero'}}>
+                <section className={styles.hero} style={{gridArea: 'hero'}}>
                     <h1 className={styles.heroTitle}>
                         The Programmer
                     </h1>
@@ -22,7 +22,7 @@ export default function Cs() {
                             Download my CV
                         </a> or keep scrolling to see it.
                     </p>
-                </div>
+                </section>
 
                 {Object.entries(CurriculumVitae).map(([key, value]) => <CvEntryRenderer key={key} entry={value} />)}
 

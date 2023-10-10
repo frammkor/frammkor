@@ -7,41 +7,6 @@ export default {
             'user experiences. Strong expertise in system design, team coordination, and DevO' +
             'ps.',
     },
-    education : {
-        id: 'education',
-        renderType: 'Education',
-        content: [
-            {
-                id: "csb",
-                description: "Bachelor in Computer Science",
-                institution: "Snow College",
-                time: "2021",
-                location: "USA",
-                additional: ""
-            }, {
-                id: 'cpw',
-                description: "Certificado en Programación Web Full Stack",
-                institution: "Mindhub",
-                time: "2019",
-                location: "Argentina",
-                additional: ""
-            }, {
-                id: 'ec',
-                description: "English Proficiency Certification",
-                institution: "TOEFL IBT TEST",
-                time: "2019",
-                location: "Argentina",
-                additional: "2019 Score: 105 out of 120"
-            }, {
-                id: 'tc',
-                description: "Turkish B2 Certification",
-                institution: "TOMER, Ankara University",
-                time: "2018",
-                location: "Turkey",
-                additional: "Score: 75 out of 100"
-            },
-        ],
-    },
     skills : {
         id: 'skills',
         renderType: 'strArray',
@@ -118,5 +83,41 @@ export default {
                 ]
             }
         ]
+    },
+
+    education : {
+        id: 'education',
+        renderType: 'Education',
+        content: [
+            {
+                id: "csb",
+                description: "Bachelor in Computer Science",
+                institution: "Snow College",
+                time: "2021",
+                location: "USA",
+                additional: ""
+            }, {
+                id: 'cpw',
+                description: "Certificado en Programación Web Full Stack",
+                institution: "Mindhub",
+                time: "2019",
+                location: "Argentina",
+                additional: ""
+            }, {
+                id: 'ec',
+                description: "English Proficiency Certification",
+                institution: "TOEFL IBT TEST",
+                time: "2019",
+                location: "Argentina",
+                additional: "2019 Score: 105 out of 120"
+            }, {
+                id: 'tc',
+                description: "Turkish B2 Certification",
+                institution: "TOMER, Ankara University",
+                time: "2018",
+                location: "Turkey",
+                additional: "Score: 75 out of 100"
+            },
+        ],
     },
 }
