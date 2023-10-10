@@ -6,10 +6,16 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: var(--background-img);
+    background-image: var(--mobile-background-img);
     background-color: black;
     inset: 0;
     opacity: 0.9;
+}
+
+@media (min-width: 720px) {
+    .backgroundMediaContainer::before {
+        background-image: var(--desktop-background-img);
+    }
 }
 
 /* .backgroundMediaContainer::after {
@@ -61,17 +67,16 @@
 
     padding: 8px 16px;
     border: 3px solid whitesmoke;
-    border-radius: 2rem;
-    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3rem;
+    background-color: white;
 
-    color: whitesmoke;
+    color: black;
     font-size: 1.2rem;
     text-decoration: none;
 
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .action:hover, .action:active, .action:focus {
-    background-color: rgba(0, 0, 0, 0.4);
-    transform: scale(1.02);
+    transform: scale(1.04);
 }
