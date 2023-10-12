@@ -28,7 +28,7 @@ export default function Art() {
             subtitle: 'Una historia de vida, de Tango',
             description: '',
             media: 'gen.jpg',
-            actionLink: 'https://youtu.be/JnxSGxT1zWs?si=1L2hXbifmydZUldC',
+            actionLink: 'https://vimeo.com/865322352',
             actionMsg: 'Watch the trailer',
             targetBlank: true,
         },

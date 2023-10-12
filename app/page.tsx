@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import Image from 'next/image'
+
+import { Contact } from '@/components'
 
 import styles from './home.module.css'
 
@@ -30,7 +31,7 @@ export default function Home() {
                         </h2>
 
                         <div className={styles.imgWrapper}>
-                            <img src="/images/mask-pxart.png" width={250} height={250} alt="Picture of the author" />
+                            <img className={styles.img} src="/images/mask-pxart.png" width={150} height={150} alt="Picture of the author" />
                         </div>
                     </Link>
                     <Link href='/art' className={styles.card}>
@@ -38,10 +39,11 @@ export default function Home() {
                             <span className={styles.cardTitleThe}>the</span> artist
                         </h2>
                         <div className={styles.imgWrapper}>
-                            <img src="/images/mask-base.png" width={250} height={250} alt="Picture of the author" />
+                            <img className={styles.img} src="/images/mask-base.png" width={150} height={150} alt="Picture of the author" />
                         </div>
                     </Link>
                 </div>
+                <Contact />
             </div>
         </div>
     )
