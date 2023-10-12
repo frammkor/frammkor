@@ -33,6 +33,10 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 Done with this [library](https://github.com/ikcb/animated-tailwindcss).
 
+### Hosting
+(How to use your Custom GoDaddy Domain Name for GitHub Pages)[https://www.youtube.com/watch?v=dbgEWWBvIxY]
+
+
 todo:
 Curriculum router
 Use component in object property
